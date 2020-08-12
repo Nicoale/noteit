@@ -11,7 +11,7 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      //navigateAfterSeconds: MyHomePage(),
+      navigateAfterSeconds: MyHomePage(),
       title: new Text(
         "PS...",
         style: new TextStyle(
@@ -40,7 +40,7 @@ class _SplashState extends State<Splash> {
         stops: [0.1, 0.5, 0.7, 0.9],
         colors: [
           // Colors are easy thanks to Flutter's Colors class.
-          Color(0xFF84fab3),
+          Color(0xFF1E524E),
           Color(0xFF4da872),
           Color(0xFF1E5233),
           Color(0xFF1E524E),

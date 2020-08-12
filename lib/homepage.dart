@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'menu.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -21,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _getCustomAppBar(),
+      appBar: _getCustomAppBar(context),
       body: Text("tuko"),
       floatingActionButton: FloatingActionButton(
         onPressed: _addNote,
@@ -32,7 +31,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-_getCustomAppBar() {
+_getCustomAppBar(
+  BuildContext context
+) {
   return PreferredSize(
     preferredSize: Size.fromHeight(50),
     child: Container(
@@ -52,7 +53,7 @@ _getCustomAppBar() {
           IconButton(
               icon: Icon(Icons.menu),
               onPressed: () {
-                Categories();
+                Navigator.pushNamed( context, '/Categories');
               }),
           Text(
             "noteIT",

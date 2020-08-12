@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Splash(),
       routes: <String, WidgetBuilder> {
-    'Categories': (context)=>  Categories(),
+    '/Categories': (BuildContext context)=>  Categories(),
     // '/screen2' : (BuildContext context) => new Screen2(),
     // '/screen3' : (BuildContext context) => new Screen3(),
     // '/screen4' : (BuildContext context) => new Screen4()

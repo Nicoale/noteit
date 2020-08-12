@@ -7,12 +7,11 @@ class Categories extends StatelessWidget {
       width: 300.0,
       height: 300.0,
       decoration: new BoxDecoration(
-        color: Colors.orange,
+        color: Color(0xFF1E5233),
         shape: BoxShape.circle,
       ),
     );
-    return Container(
-      color: Colors.black,
+    return Drawer(
       child: new Center(
         child: new Stack(
           children: <Widget>[
